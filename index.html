@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al Portal de Crédito - Banco Pichincha</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pichincha: {
+                            blue: '#002855',
+                            darkBlue: '#001C3D',
+                            lightBlueBg: '#F0F4F8',
+                            yellow: '#FFD100',
+                            yellowHover: '#E6BC00',
+                            grayBg: '#F7FAFC',
+                            textDark: '#1A202C',
+                            textMuted: '#4A5568'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-pichincha-grayBg font-sans text-pichincha-textDark min-h-screen flex flex-col justify-between antialiased">
+
+    <!-- Header institucional -->
+    <header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            <!-- Logo oficial -->
+            <div class="flex items-center">
+                <a href="https://www.pichincha.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Banco_Pichincha_nuevo.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" 
+                         alt="Banco Pichincha" 
+                         class="h-9 sm:h-11 w-auto object-contain"
+                         onerror="this.onerror=null; this.src='https://placehold.co/220x50/002855/FFD100?text=Banco+Pichincha';">
+                </a>
+            </div>
+
+            <!-- Insignia de Seguridad -->
+            <div class="flex items-center space-x-2 text-xs text-pichincha-blue bg-pichincha-lightBlueBg px-3.5 py-1.5 rounded-full font-medium">
+                <i class="fas fa-lock text-pichincha-blue"></i>
+                <span class="hidden sm:inline">Portal 100% Seguro</span>
+                <span class="sm:hidden">Seguro</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal Simplificado -->
+    <main class="max-w-xl mx-auto px-4 sm:px-6 py-12 sm:py-16 w-full flex-grow flex flex-col justify-center">
+        
+        <!-- Tarjeta de Bienvenida y Aprobación -->
+        <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 sm:p-10 text-center transition-all">
+            
+            <!-- Icono Destacado -->
+            <div class="w-16 h-16 bg-pichincha-lightBlueBg text-pichincha-blue rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm border border-blue-100">
+                <i class="fas fa-bolt text-2xl text-pichincha-yellow filter drop-shadow"></i>
+            </div>
+
+            <!-- Títulos Principales -->
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-pichincha-blue tracking-tight mb-4">
+                Bienvenido al portal de crédito Banco Pichincha
+            </h1>
+            
+            <p class="text-sm sm:text-base text-pichincha-textMuted font-normal mb-8 leading-relaxed">
+                Obtén tu aprobación en pocos minutos y realiza un <strong class="text-pichincha-blue font-semibold">crédito desembolsable directo a tu cuenta</strong> de forma rápida y segura.
+            </p>
+
+            <!-- Beneficios Destacados -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-left">
+                <div class="bg-pichincha-lightBlueBg/60 border border-blue-50 p-3.5 rounded-xl flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-pichincha-blue text-pichincha-yellow flex items-center justify-center shrink-0">
+                        <i class="fas fa-check text-xs"></i>
+                    </div>
+                    <span class="text-xs sm:text-sm font-bold text-pichincha-blue">Aprobación en minutos</span>
+                </div>
+                <div class="bg-pichincha-lightBlueBg/60 border border-blue-50 p-3.5 rounded-xl flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-pichincha-blue text-pichincha-yellow flex items-center justify-center shrink-0">
+                        <i class="fas fa-wallet text-xs"></i>
+                    </div>
+                    <span class="text-xs sm:text-sm font-bold text-pichincha-blue">Desembolso inmediato</span>
+                </div>
+            </div>
+
+            <!-- Botón de Acción Principal -->
+            <a href="https://desembolsableenlinea--lineamenner.replit.app/" 
+               class="w-full bg-pichincha-yellow hover:bg-pichincha-yellowHover text-pichincha-blue font-extrabold text-base sm:text-lg py-4 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2 cursor-pointer active:scale-[0.99] text-center no-underline">
+                <span>Solicitar mi crédito ahora</span>
+                <i class="fas fa-arrow-right text-sm"></i>
+            </a>
+
+            <p class="mt-5 text-center text-xs text-gray-400">
+                <i class="fas fa-shield-alt text-pichincha-blue mr-1"></i> Proceso 100% digital respaldado por Banco Pichincha.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pichincha-blue text-white py-6 border-t border-blue-950">
+        <div class="max-w-4xl mx-auto px-4 text-center text-xs text-gray-300">
+            <p>© 2026 Banco Pichincha C.A. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
